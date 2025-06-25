@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ideas_and_concepts/modules/profile/views/edit_profile_view.dart';
 import 'package:ideas_and_concepts/modules/profile/views/profile_view.dart';
 
 void main() {
@@ -10,6 +11,9 @@ class IdeasAndConcepts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: ProfileView(), debugShowCheckedModeBanner: false);
+    return MaterialApp(
+      home: EditProfileView(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
