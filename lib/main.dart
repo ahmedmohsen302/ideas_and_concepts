@@ -10,6 +10,6 @@ class IdeasAndConcepts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: ProfileView());
+    return MaterialApp(home: ProfileView(), debugShowCheckedModeBanner: false);
   }
 }
