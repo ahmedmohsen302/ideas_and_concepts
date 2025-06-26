@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:ideas_and_concepts/core/constants/app_colors.dart';
 import 'package:ideas_and_concepts/core/constants/app_styles.dart';
 import 'package:ideas_and_concepts/modules/profile/views/widgets/profile_view_body.dart';
+import 'package:ideas_and_concepts/routes/app_routes.dart';
 import 'package:lucide_icons/lucide_icons.dart';
 
 class ProfileView extends StatelessWidget {
@@ -16,7 +19,9 @@ class ProfileView extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.toNamed(AppRoutes.editProfile);
+            },
             icon: Icon(LucideIcons.edit3, color: AppColors.salmon),
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:ideas_and_concepts/core/constants/app_colors.dart';
 import 'package:ideas_and_concepts/core/constants/app_styles.dart';
 
@@ -11,7 +12,7 @@ class UpdateButton extends StatelessWidget {
       width: 200,
       child: ElevatedButton(
         onPressed: () {
-          // Add your update logic here
+          Get.back();
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.salmon,
