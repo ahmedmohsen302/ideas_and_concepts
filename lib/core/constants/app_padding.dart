@@ -9,4 +9,5 @@ class AppPadding {
   static const h60 = EdgeInsetsGeometry.symmetric(horizontal: 60);
   static const v5 = EdgeInsetsGeometry.symmetric(vertical: 5);
   static const v16 = EdgeInsetsGeometry.symmetric(vertical: 16);
+  static const all2 = EdgeInsetsGeometry.all(2);
 }

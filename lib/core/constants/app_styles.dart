@@ -7,6 +7,11 @@ class AppStyles {
     fontSize: 24,
     fontWeight: FontWeight.bold,
   );
+  static const terracotta24 = TextStyle(
+    color: AppColors.terracotta,
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+  );
   static const black24 = TextStyle(
     color: AppColors.black,
     fontSize: 24,
@@ -18,8 +23,16 @@ class AppStyles {
     fontSize: 20,
   );
   static const black22 = TextStyle(color: AppColors.black, fontSize: 22);
-  static const black18 = TextStyle(color: AppColors.black, fontSize: 18);
-  static const black16 = TextStyle(color: AppColors.black, fontSize: 16);
+  static const black18 = TextStyle(
+    color: AppColors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+  );
+  static const black16 = TextStyle(
+    color: AppColors.black,
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+  );
   static const blackBold16 = TextStyle(
     color: AppColors.black,
     fontSize: 16,
@@ -35,6 +48,6 @@ class AppStyles {
     color: AppColors.black,
     fontSize: 18,
     fontStyle: FontStyle.italic,
-    fontWeight: FontWeight.w100,
+    fontWeight: FontWeight.w300,
   );
 }

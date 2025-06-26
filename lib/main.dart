@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ideas_and_concepts/core/constants/app_colors.dart';
+import 'package:ideas_and_concepts/modules/orders/views/orders_view.dart';
 import 'package:ideas_and_concepts/modules/profile/views/edit_profile_view.dart';
 import 'package:ideas_and_concepts/modules/profile/views/profile_view.dart';
 
@@ -12,8 +14,12 @@ class IdeasAndConcepts extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: EditProfileView(),
+      home: OrdersView(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.white,
+        appBarTheme: AppBarTheme(backgroundColor: AppColors.white),
+      ),
     );
   }
 }
